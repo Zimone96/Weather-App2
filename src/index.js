@@ -57,6 +57,7 @@ function showTemp2(response) {
   description.innerHTML = `-*-*-> ${realDescription} <-*-*-`;
 
   let iconChange = document.querySelector("i");
+  
   let weatherIcon = response.data.weather[0].icon;
   let weatherIconHtml = `<img src=https://openweathermap.org/img/wn/${weatherIcon}@2x.png>`;
   iconChange.innerHTML = `${weatherIconHtml}`;
